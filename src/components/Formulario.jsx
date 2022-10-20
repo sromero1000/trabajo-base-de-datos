@@ -39,6 +39,41 @@ const Formulario = () => {
     const guardarpersonas = async (e) =>{
         e.preventDefault()
 
+        if(!nombres.trim()){
+            setError('Digite sus nombres')
+             return
+         }
+ 
+         if(!apellidos.trim()){
+             setError('Digite sus apellidos')
+             return
+         }
+ 
+         if(!telefono.trim()){
+             setError('Digite su telefono')
+             return
+         }
+ 
+         if(!cedula.trim()){
+             setError('Digite su cedula')
+             return
+         }
+ 
+         if(!correo.trim()){
+             setError('Digite su correo')
+             return
+         }
+ 
+         if(!direccion.trim()){
+             setError('Digite su direccion')
+             return
+         }
+ 
+         if(!nacionalidad.trim()){
+             setError('Digite su nacionalidad')
+             return
+         }
+
         try{
             const data = await addDoc(collection(db, 'personas'),{
                 persona_nombre: nombres,
