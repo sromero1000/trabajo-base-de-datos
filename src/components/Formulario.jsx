@@ -5,7 +5,6 @@ import { collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot } from 'fireb
 
 
 
-
 const Formulario = () => {
     const [nombres, setnombres] = useState('')
     const [apellidos, setapellidos] = useState('')
