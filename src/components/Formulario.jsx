@@ -3,7 +3,6 @@ import {db} from '../firebase';
 import { collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 
 
-
 const Formulario = () => {
     const [nombres, setnombres] = useState('')
     const [apellidos, setapellidos] = useState('')
